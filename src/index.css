@@ -234,7 +234,7 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: slateblue;
+  /* background-color: slateblue; */
   margin-top: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
@@ -339,4 +339,116 @@ button {
       margin-top: 10px;
       min-height: 25px;
   }
+}
+
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.main-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Input and Button */
+.todo_div input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  width: 250px;
+}
+
+.todo_div{
+  flex-wrap: wrap;
+}
+.todo_div input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.todo_div button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todo_div button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* List Items */
+.ul-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 400px;
+}
+
+.render-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.render-todo:hover {
+  transform: translateY(-5px);
+  background-color: #f9f9f9;
+}
+
+/* Buttons in List Items */
+.btn-div button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }

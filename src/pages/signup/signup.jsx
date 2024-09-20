@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import app from "../../config/firebaseConfig.js";
+import { app } from '../../config/firebaseConfig.js';
 
 const Signup = () => {
     const nameRef = useRef(null);
